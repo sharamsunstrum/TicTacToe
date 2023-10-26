@@ -1,0 +1,84 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Cursor::isPressedF' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Sharam/Documents/regle/Baron/TicTacToe/TicTacToe/Cursor.h"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Cursor::{ctor}",
+                  "decoratedName": "??0Cursor@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Cursor::isPressedF"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Sharam/Documents/regle/Baron/TicTacToe/TicTacToe/Cursor.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "a4ff8b5c3b301df4fa25c57a6b62eb887a59cec905bc7ababbea5a7dc63f383a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sharam/documents/regle/baron/tictactoe/tictactoe/board.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2e2144abb85546b5e752c8ad521d97a3cc1c831aa97481a40cb9c83e63508745"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sharam/documents/regle/baron/tictactoe/tictactoe/board.h"
+          },
+          "hashes": {
+            "sha-256": "37833701054928b8f045f6a38ea1f52b865f95671833ddd33dbac9cf7f84a89a"
+          }
+        }
+      ]
+    }
+  ]
+}

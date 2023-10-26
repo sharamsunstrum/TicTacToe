@@ -1,0 +1,7 @@
+write random y if horizontal is full take this row from the randomization
+
+correct the win checker
+
+and I thing the game will be done
+
+-cleaning the code
